@@ -319,6 +319,7 @@ button{font-family:inherit;cursor:pointer;}
   margin:18px 0 20px;
 }
 .hero-brand-initials{
+  position:relative;
   font-family:var(--font-display);
   font-size:clamp(calc(7rem + 2pt), calc(18vw + 2pt), calc(12rem + 2pt));
   font-weight:700;
@@ -326,6 +327,16 @@ button{font-family:inherit;cursor:pointer;}
   letter-spacing:-.03em;
   color:var(--white);
   -webkit-text-stroke:.5px currentColor;
+}
+.hero-brand-initials::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:.48em;
+  width:.3em;
+  height:.08em;
+  background:currentColor;
+  pointer-events:none;
 }
 .hero-brand-name{
   font-family:var(--font-mono);
