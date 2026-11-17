@@ -332,8 +332,8 @@ button{font-family:inherit;cursor:pointer;}
   content:"";
   position:absolute;
   top:.035em;
-  left:.48em;
-  width:.18em;
+  left:.24em;
+  width:.24em;
   height:.045em;
   background:currentColor;
   pointer-events:none;
