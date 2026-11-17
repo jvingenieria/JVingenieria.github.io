@@ -16,8 +16,8 @@ const SITE = {
   linkedin: "https://www.linkedin.com/in/tu-usuario",
   heroImagen: "assets/proyectos/casa1-1.png",
   heroAlt: "Casa campestre en Popayán",
-  heroEyebrow: "Colombia",
-  heroTitulo: "Ingeniería civil, ejecutada con precisión.",
+  heroEyebrow: "Ingeniería civil ejecutada con precisión.",
+  heroTitulo: "JV Ingeniería",
   heroDescripcion: "Este portafolio reúne los proyectos en los que he participado a lo largo de mi carrera profesional.",
   heroStats: [
     { valor: "8", texto: "Años de experiencia" },

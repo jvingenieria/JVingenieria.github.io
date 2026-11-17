@@ -58,7 +58,17 @@ function initSiteContent() {
   if (heroEyebrow) heroEyebrow.textContent = SITE.heroEyebrow || SITE.ubicacionBase;
 
   const heroTitle = document.querySelector(".hero h1");
-  if (heroTitle) heroTitle.textContent = SITE.heroTitulo || heroTitle.textContent;
+  if (heroTitle) {
+    const heroBrandInitials = heroTitle.querySelector(".hero-brand-initials");
+    const heroBrandName = heroTitle.querySelector(".hero-brand-name");
+    if (heroBrandInitials && heroBrandName) {
+      const [initials, ...name] = (SITE.heroTitulo || "").split(" ");
+      heroBrandInitials.textContent = initials;
+      heroBrandName.textContent = name.join(" ").toLocaleUpperCase("es");
+    } else {
+      heroTitle.textContent = SITE.heroTitulo || heroTitle.textContent;
+    }
+  }
 
   const heroDesc = document.querySelector(".hero .lead");
   if (heroDesc) heroDesc.textContent = SITE.heroDescripcion || heroDesc.textContent;
