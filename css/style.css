@@ -320,11 +320,12 @@ button{font-family:inherit;cursor:pointer;}
 }
 .hero-brand-initials{
   font-family:var(--font-display);
-  font-size:clamp(7rem, 18vw, 12rem);
+  font-size:clamp(calc(7rem + 2pt), calc(18vw + 2pt), calc(12rem + 2pt));
   font-weight:700;
   line-height:.8;
-  letter-spacing:-.17em;
+  letter-spacing:-.03em;
   color:var(--white);
+  -webkit-text-stroke:.5px currentColor;
 }
 .hero-brand-name{
   font-family:var(--font-mono);
