@@ -48,12 +48,6 @@ function initFooterYear() {
 }
 
 function initSiteContent() {
-  document.title = `${SITE.nombre} — ${SITE.titulo}`;
-
-  document.querySelectorAll(".brand").forEach((el) => {
-    el.innerHTML = `${SITE.nombre}<small>${SITE.titulo}</small>`;
-  });
-
   const heroPhoto = document.querySelector(".hero-photo");
   if (heroPhoto) {
     heroPhoto.src = SITE.heroImagen || heroPhoto.src;
@@ -233,8 +227,6 @@ function initProyectoDetalle() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
   const p = PROYECTOS.find(x => x.id === id) || PROYECTOS[0];
-
-  document.title = `${p.titulo} — ${SITE.nombre}`;
 
   document.getElementById("pd-tag").textContent = categoriaLabel(p.categoria);
   document.getElementById("pd-title").textContent = p.titulo;
