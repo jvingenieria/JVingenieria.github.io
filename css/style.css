@@ -331,10 +331,10 @@ button{font-family:inherit;cursor:pointer;}
 .hero-brand-initials::after{
   content:"";
   position:absolute;
-  top:0;
+  top:.035em;
   left:.48em;
-  width:.3em;
-  height:.08em;
+  width:.18em;
+  height:.045em;
   background:currentColor;
   pointer-events:none;
 }
