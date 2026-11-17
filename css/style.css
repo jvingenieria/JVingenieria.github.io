@@ -137,21 +137,11 @@ button{font-family:inherit;cursor:pointer;}
 .brand{
   font-family:var(--font-display);
   font-weight:600;
-  font-size:1.05rem;
+  font-size:calc(1.05rem + 2pt);
   color:var(--white);
   letter-spacing:.01em;
-  display:flex;
-  flex-direction:column;
+  display:block;
   line-height:1.1;
-}
-.brand small{
-  font-family:var(--font-mono);
-  font-size:.62rem;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  color:var(--blueprint);
-  font-weight:400;
-  margin-top:2px;
 }
 .nav-links{
   display:flex;
